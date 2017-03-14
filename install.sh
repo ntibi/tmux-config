@@ -2,7 +2,7 @@
 
 
 REPO_BASE="$(dirname "$PWD/$0")"
-REPO_TMUX="$(realpath $REPO_BASE/tmux.conf)"
+REPO_TMUX="$(readlink -f $REPO_BASE/tmux.conf)"
 
 DEST="$HOME/.tmux.conf"
 
